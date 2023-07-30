@@ -1,13 +1,16 @@
 import styles from './TodoList.module.scss';
+import Todo from '../Todo/Todo';
 
-import { RiTodoFill } from 'react-icons/ri'
-
-function TodoList() {
+function TodoList({ todos }) {
+  if (todos.length === 0) {
+    return <h2>Todo list is empty</h2>;
+  }
   return (
-    <div className={styles.main}>
-      <RiTodoFill className={styles.icon} />
-      <p className={styles.text}>Test text 123</p>
-    </div>
+    <ul>
+      {todos.map((value) => {
+        return <Todo todo={value} />;
+      })}
+    </ul>
   );
 }
 
