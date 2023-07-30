@@ -1,0 +1,28 @@
+.light {
+  --main-bg: #202023;
+
+  // FORM
+  --form-color: #fff;
+  --form-placeholder: #fff;
+  --form-placeholder-hover: rgba(181, 181, 181, 0.547);
+  --form-border: rgba(181, 181, 181, 0.547);
+  --form-border-hover: rgba(223, 223, 223, 0.932);
+  --form-border-active: rgba(0, 0, 0, 0);
+
+  // BUTTON
+  --button-color: #fff;
+  --button-bg: #202023;
+  --button-bg-hover: rgba(181, 181, 181, 0.217);
+  --button-bg-active: rgba(181, 181, 181, 0.795);
+  --button-border: rgba(181, 181, 181, 0.547);
+  --button-border-hover: rgba(223, 223, 223, 0.932);
+  --button-border-active: rgba(0, 0, 0, 0);
+
+  // LIST
+  --list-color: #fff;
+  --list-bg: rgba(181, 181, 181, 0.192);
+  --list-border: rgba(181, 181, 181, 0.547);
+  --list-border-hover: rgba(223, 223, 223, 0.932);
+  --list-icon: rgb(181, 181, 181);
+  --list-icon-hover: rgb(223, 223, 223);
+}

@@ -1,0 +1,25 @@
+.input {
+  margin-right: 40px;
+  padding-left: 10px;
+  min-width: 55px;
+  min-height: 55px;
+  border-radius: 7px;
+  font-size: 25px;
+  transition: 0.4s;
+  outline: none;
+  border: 4px solid var(--form-border);
+  color: var(--form-color);
+  &::placeholder {
+    transition: 0.4s;
+    color: var(--form-placeholder);
+  }
+  &:hover::placeholder {
+    color: var(--form-placeholder-hover);
+  }
+  &:hover {
+    border: 4px solid var(--form-border-hover);
+  }
+  &:active {
+    border: 4px solid var(--form-border-active);
+  }
+}
