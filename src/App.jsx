@@ -21,13 +21,17 @@ function App() {
     }
   }
 
+  function onTodoDelete(i) {
+    setTodos(todos.filter((_, index) => index !== i));
+  }
+
   return (
     <div className={styles.app}>
       <h1 className={styles.title}>Todo App</h1>
       <div className={styles.form}>
         <TodoForm addTodo={addTodo} todo={todo} onChangeTodo={onChangeTodo} />
       </div>
-      <TodoList todos={todos} />
+      <TodoList onTodoDelete={onTodoDelete} todos={todos} />
     </div>
   );
 }
