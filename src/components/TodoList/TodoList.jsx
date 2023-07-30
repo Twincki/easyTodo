@@ -1,14 +1,15 @@
-import styles from './TodoList.module.scss';
 import Todo from '../Todo/Todo';
+
+import styles from './TodoList.module.scss';
 
 function TodoList({ todos }) {
   if (todos.length === 0) {
     return <h2>Todo list is empty</h2>;
   }
   return (
-    <ul>
-      {todos.map((value) => {
-        return <Todo todo={value} />;
+    <ul className={styles.main}>
+      {todos.map((value, index) => {
+        return <Todo key={index} todo={value} />;
       })}
     </ul>
   );
