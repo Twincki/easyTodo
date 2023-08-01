@@ -5,7 +5,7 @@ import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <div className="light">
+  <div className="dark">
     <App />
   </div>
 );

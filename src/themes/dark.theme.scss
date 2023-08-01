@@ -1,8 +1,14 @@
-.light {
+.dark {
   --main-bg: #202023;
   --selection-bg: #202023;
   --selection-color: #fff;
   --selection-shadow: rgb(50, 239, 246);
+
+  // // SCROLLBAR
+  // --scrollbar-thumb: #303030bc;
+  // --scrollbar-thumb-hover: rgb(52, 52, 52);
+  // --scrollbar-thumb-shadow: rgba(223, 223, 223, 0.511);
+  // --scrollbar-track: rgb(135, 135, 135);
 
   // FORM
   --form-color: #fff;
